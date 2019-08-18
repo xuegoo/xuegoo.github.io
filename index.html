@@ -1,803 +1,566 @@
+
 <!DOCTYPE html>
-<html lang="zxx">
-   <head>
-      <title>立人创客-首页</title>
-      <!--meta tags -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="keywords" content="" />
-      <script>
-         addEventListener("load", function () {
-         	setTimeout(hideURLbar, 0);
-         }, false);
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="graphic language to play with three.js webgl">
+    <meta name="author" content="jerome etienne">
 
-         function hideURLbar() {
-         	window.scrollTo(0, 1);
-         }
-      </script>
-      <!--//meta tags ends here-->
-      <!--booststrap-->
-      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-      <!--//booststrap end-->
-      <!-- font-awesome icons -->
-      <link href="css/font-awesome.css" rel="stylesheet">
-      <!-- //font-awesome icons -->
-      <!--stylesheets-->
-      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-      <!--//stylesheets-->
-      <link href="http://fonts.googleapis.com/css?family=Mukta+Malar:400,500,600,700" rel="stylesheet">
-      <link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-   </head>
-   <body>
-      <div class="header-outs" id="header">
-         <!--banner -->
-         <div class="header-w3layouts">
-            <!--//navigation section -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <div class="hedder-up">
-                  <h1><a class="navbar-brand" href="index.html">立人创客</a></h1>
-               </div>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav ">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">首页<span class="sr-only">(current)</span></a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="about.html" class="nav-link ">简介</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="service.html" class="nav-link">服务</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        项目
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                           <a class="nav-link " href="typography.html">编程教育</a>
-                           <a href="gallery.html" class="nav-link">人工智能</a>
-                        </div>
-                     </li>
-                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">联系</a>
-                     </li>
-                     <li class="nav-button">
-                        <button type="button" class="btn login-hedder" data-toggle="modal" data-target="#exampleModalCenter">
-                        Login
-                        </button>
-                     </li>
-                  </ul>
-                  <div class="both-butns">
-                     <ul>
-                        <li>
-                           <button type="button" class="register-hedder"  data-toggle="modal" data-target="#exampleModalCenter2">
-                           Register
-                           </button>
-                        </li>
-                        <li>
-                           <div class="contact-hedder">
-                              <a href="contact.html">
-                              联系我们</a>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-            <!--//navigation section -->
-            <div class="clearfix"> </div>
-         </div>
+    <title>金牛实验立人创客游戏化学习超市</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://www.jnschool.com/html/lessons/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 50px;
+      }
+      .starter-template {
+        padding: 40px 15px;
+        text-align: center;
+      }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      
+      
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">立人创客游戏化学习超市</a>
+        </div>
+<!--/.nav-collapse -->
       </div>
-      <!-- //Navigation -->
-      <!-- Slideshow 4 -->
-      <div class="slider">
-         <div class="callbacks_container">
-            <ul class="rslides" id="slider4">
-               <li>
-                  <div class="slider-img one-img">
-                     <div class="container">
-                        <div class="slider-info ">
-                           <h5>Focus on Mission</h5>
-                           <div class="slider-sub">
-                              <h6>人工智能教育</h6>
-                           </div>
-                           <div class="bottom-info">
-                              <p>
-                                 我们致力于用游戏化学习方式服务中小学生人工智能教育
-                              </p>
-                           </div>
-                           <div class="outs_more-buttn">
-                              <a href="about.html">Read More</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-               <li>
-                  <div class="slider-img two-img">
-                     <div class="container">
-                        <div class="slider-info ">
-                           <h5>编程教育
-                           </h5>
-                           <div class="slider-sub">
-                              <h6>Best work place</h6>
-                           </div>
-                           <div class="bottom-info">
-                              <p>
-                                 编程教育基于计算思维与设计思维来传授
-                              </p>
-                           </div>
-                           <div class="outs_more-buttn">
-                              <a href="about.html">Read More</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-               <li>
-                  <div class="slider-img three-img">
-                     <div class="container">
-                        <div class="slider-info">
-                           <h5>Face Your Challenge
-                           </h5>
-                           <div class="slider-sub">
-                              <h6>成为一个创客</h6>
-                           </div>
-                           <div class="bottom-info">
-                              <p>
-                                 坚持创新、开源、协作、共享
-                              </p>
-                           </div>
-                           <div class="outs_more-buttn">
-                              <a href="about.html">Read More</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </li>
-            </ul>
-         </div>
-         <!-- This is here just to demonstrate the callbacks -->
-         <!-- <ul class="events">
-            <li>Example 4 callback events</li>
-            </ul>-->
-         <div class="clearfix"></div>
+    </div>
+
+    <div class="container">
+
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>游戏化学习超市&nbsp;<small>面向中小学生好玩的创客教育</small></h1>
+        <p class="lead">因学校内网创客教育平台只能在校园中用，目前尝试放到互联网服务更多学生。此项目就是尝试在中小学生中推广创客精神，主要是收集世界各类先进开源教育技术,为孩子们搭建起容易理解、方便体验的各类创客创新工具，为更多老师分享有用的工具，推广世界最先进的儿童学习方法，尝试
+		建立学生视角的人工智能理解方式。因项目部分采用web三维，最好用<a href="http://www.firefox.com.cn/" >firefox</a>等高版本浏览器打开。目前项目还在不断完善中，课程也在开发，希望大家支持一线公办初中创客教育实践,欢迎更多朋友一起探索，建设有趣、有用、有意义的教育公益绿色可持续生态。【成都市金牛实验中学校信息中心刘海宾老师整理QQ:2457551613】
+        
+        </p>
+       
       </div>
-      <!-- //banner -->
-      <!-- //about -->
-      <section class="about py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-4">
-            <div class="row w3layout-abt-info text-center">
-               <div class="col-lg-3 col-md-6 col-sm-6 abut-list-w3layouts">
-                  <div class="abtr-inner-sub">
-                     <span class="fa fa-pie-chart" aria-hidden="true"></span>
-                     <div class="abt-icon-list-wls mt-3">
-                        <h4 class="mb-3">能力要求</h4>
-                        <p>热爱创新、喜欢行动、乐于助人、团队分享 </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 abut-list-w3layouts">
-                  <div class="abtr-inner-sub">
-                     <span class="fa fa-check" aria-hidden="true"></span>
-                     <div class="abt-icon-list-wls mt-3">
-                        <h4 class="mb-3">专业服务</h4>
-                        <p>一线专业教师公办公益免费教学 </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 abut-list-w3layouts">
-                  <div class="abtr-inner-sub">
-                     <span class="fa fa-area-chart" aria-hidden="true"></span>
-                     <div class="abt-icon-list-wls mt-3">
-                        <h4 class="mb-3">创新方向</h4>
-                        <p>致力于中小学生创新能力的解放 </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 abut-list-w3layouts">
-                  <div class="abtr-inner-sub">
-                     <span class="fa fa-cubes" aria-hidden="true"></span>
-                     <div class="abt-icon-list-wls mt-3">
-                        <h4 class="mb-3">创造工匠</h4>
-                        <p>努力把想法变成现实</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!--//about -->
-      <!--service  -->
-      <section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="service">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Services</h3>
-            <div class="row top-service pb-lg-4 pb-md-3 pb-2">
-               <div class="col-lg-8 col-md-8 service-wthree-info-left" >
-                  <div class="mb-lg-5 mb-md-4 mb-3 service-num-left">
-                     <h6>1</h6>
-                  </div>
-                  <h4 class="mb-lg-4 mb-3"> Professional Agency</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet</p>
-               </div>
-               <div class="col-lg-4 col-md-4 ser-service gap-service text-center">
-                  <div class="service-icon-one">
-                     <img src="images/ser1.png" alt="" class="img-fluid">
-                  </div>
-               </div>
-            </div>
-            <div class=" my-lg-5 my-md-4 my-sm-4 my-3 row mid-service">
-               <div class="col-lg-4 col-md-4 ser-service  text-center">
-                  <div class="service-icon-two move-right">
-                     <img src="images/ser2.png" alt="" class="img-fluid">
-                  </div>
-               </div>
-               <div class="col-lg-8 col-md-8 service-wthree-info-left">
-                  <div class="mb-lg-5 mb-md-4 mb-3 service-num-left">
-                     <h6>2</h6>
-                  </div>
-                  <h4 class="mb-lg-4 mb-3">Tax Advice and Management</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet</p>
-               </div>
-            </div>
-            <div class="row bottom-service pt-lg-4 pt-md-3 pt-2">
-               <div class="col-lg-8 col-md-8 service-wthree-info-left" >
-                  <div class="mb-lg-5 mb-md-4 mb-3 service-num-left">
-                     <h6>3</h6>
-                  </div>
-                  <h4 class="mb-lg-4 mb-3">Planning & Strategy</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet,</p>
-               </div>
-               <div class="col-lg-4 col-md-4 ser-service gap-service text-center">
-                  <div class="service-icon-three">
-                     <img src="images/ser3.png" alt="" class="img-fluid">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!--//service  -->
-      <!--team-->
-      <section class="team py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Meet Our Team</h3>
-            <div class="row pt-lg-5 pt-md-5 pt-sm-4 pt-3">
-               <div class="col-lg-3 col-md-6 col-sm-6 ser-icon text-center">
-                  <div class="team-position">
-                     <div class="icon-wthree-top">
-                        <img src="images/t1.jpg" alt="" class="img-fluid">
-                     </div>
-                     <div class="team-text-wthree">
-                        <h4>
-                           Sam Deo
-                        </h4>
-                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                     </div>
-                     <div class="icons-client text-center">
-                        <ul>
-                           <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                           <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                           <li><a href="#"><span class="fa fa-rss"></span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 ser-icon text-center">
-                  <div class="team-position">
-                     <div class="icon-wthree-top">
-                        <img src="images/t2.jpg" alt="" class="img-fluid">
-                     </div>
-                     <div class="team-text-wthree">
-                        <h4>
-                           Max Will
-                        </h4>
-                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                     </div>
-                     <div class="icons-client text-center">
-                        <ul>
-                           <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                           <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                           <li><a href="#"><span class="fa fa-rss"></span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 ser-icon text-center">
-                  <div class="team-position">
-                     <div class="icon-wthree-top">
-                        <img src="images/t3.jpg" alt="" class="img-fluid">
-                     </div>
-                     <div class="team-text-wthree">
-                        <h4>
-                           Ray Son
-                        </h4>
-                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                     </div>
-                     <div class="icons-client text-center">
-                        <ul>
-                           <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                           <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                           <li><a href="#"><span class="fa fa-rss"></span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 ser-icon text-center">
-                  <div class="team-position">
-                     <div class="icon-wthree-top">
-                        <img src="images/t4.jpg" alt="" class="img-fluid">
-                     </div>
-                     <div class="team-text-wthree">
-                        <h4>
-                           Zone Hill
-                        </h4>
-                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                     </div>
-                     <div class="icons-client text-center">
-                        <ul>
-                           <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                           <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                           <li><a href="#"><span class="fa fa-rss"></span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!--//team-->
-      <!--Testmonials-->
-      <section class="clients py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Testimonials</h3>
-            <div class="testmonials text-center">
-               <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                     <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                     <li data-target="#blogCarousel" data-slide-to="1">
-                     <li data-target="#blogCarousel" data-slide-to="2">
-                  </ol>
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-lg-4 clients-gride-img ">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c1.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3">Rose Kent</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 clients-gride-img ">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c2.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3">Jack Will</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 clients-gride-img ">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c3.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3 ">Clark Deo</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!--.row-->
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-lg-4 clients-gride-img">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c1.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3">Rose Kent</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 clients-gride-img">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c2.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3">Jack Will</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 clients-gride-img">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c3.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3 ">Clark Deo</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <!--.row-->
-                     <!--.item-->
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-lg-4 clients-gride-img ">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c1.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3">Rose Kent</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 clients-gride-img">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c2.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3">Jack Will</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 clients-gride-img">
-                              <div class="clients-gride-grid">
-                                 <div class="mb-3 clients-w3pvt-img">
-                                    <img src="images/c3.jpg" alt=" " class="img-fluid">
-                                 </div>
-                                 <div class="clients-color-wthree text-center">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                                    </p>
-                                    <div class="clients-txt-wls">
-                                       <h4 class="mt-3 ">Clark Deo</h4>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!--.row-->
-               </div>
-            </div>
-         </div>
-         <!--carousel-inner-->
-      </section>
-      <!--//Testmonials-->
-      <!--stats-->
-      <section class="stats py-lg-4 py-md-3 py-sm-3 py-3">
-         <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Fun Facts</h3>
-            <div class="row">
-               <div class="col-lg-5 col-md-5">
-                  <div class="jst-must-info text-center">
-                     <div class="row stats-info">
-                        <div class="col-md-6 col-sm-6 col-6 stats-grid-1">
-                           <div class=" stats-grid">
-                              <div class="counter">2045</div>
-                              <div class="stat-info">
-                                 <h5 class="pt-2">Experience </h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-6 stats-grid-2">
-                           <div class=" stats-grid">
-                              <div class="counter">350</div>
-                              <div class="stat-info">
-                                 <h5 class="pt-2"> Staff</h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="mt-lg-4 mt-md-3 mt-3 col-md-6 col-sm-6 col-6 stats-grid-3">
-                           <div class=" stats-grid">
-                              <div class="counter">1000</div>
-                              <div class="stat-info">
-                                 <h5 class="pt-2"> Coffee</h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="mt-lg-4 mt-md-3 mt-3 col-md-6 col-sm-6 col-6 stats-grid-4">
-                           <div class=" stats-grid">
-                              <div class="counter">650</div>
-                              <div class="stat-info">
-                                 <h5 class="pt-2"> Projects </h5>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-7 col-md-7 left-side-w3layouts">
-                  <div class="iteam-bar">
-                     <h5 class="pb-3">HR Magazine</h5>
-                     <div class="progress my-bar">
-                        <div class="progress-bar progress-bar-striped " role="progressbar" style="width: 75%"></div>
-                     </div>
-                  </div>
-                  <div class="iteam-bar pt-lg-4 pt-3">
-                     <h5 class="pb-3">Events & Blogs</h5>
-                     <div class="progress my-bar">
-                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%"></div>
-                     </div>
-                  </div>
-                  <div class="iteam-bar pt-lg-4  pt-3">
-                     <h5 class="pb-3">Social Media</h5>
-                     <div class="progress my-bar">
-                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%"></div>
-                     </div>
-                  </div>
-                  <div class="iteam-bar pt-lg-4 pt-3">
-                     <h5 class="pb-3">Requirements</h5>
-                     <div class="progress my-bar">
-                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!--//stats-->
-      <!--footer-->
-      <footer class="buttom-footer py-lg-5 py-md-4 py-sm-3 py-3">
-         <div class="container-fluid py-3">
-            <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Newsletter</h3>
-            <!--subscribe-->
-            <div class="mb-lg-5 mb-md-4 mb-3 sub-wthree-form">
-               <form>
-                  <div class="form-group email-sub-w3layouts">
-                     <input type="email" class="form-control email-sub-w3layouts" placeholder="Email" required="">
-                  </div>
-                  <div class="pt-sm-3 pt-2 text-center">
-                     <button type="submit" class="btn subscrib-btnn">Subscribe</button>
-                  </div>
-               </form>
-            </div>
-            <!--//subscribe-->
-            <div class="row">
-               <div class="col-lg-7 col-md-7">
-                  <div class="headder-logo-icon text-center">
-                     <h2><a href="index.html">Job-point</a></h2>
-                  </div>
-                  <div class="footer-bottom py-lg-4 py-md-3 py-2 text-center">
-                     <p>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-                  </div>
-               </div>
-               <div class="col-lg-5 col-md-5">
-                  <div class="buttom-nav py-2">
-                     <nav class="border-line">
-                        <ul class="nav justify-content-center">
-                           <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                           </li>
-                           <li class="nav-item">
-                              <a href="about.html" class="nav-link ">About</a>
-                           </li>
-                           <li class="nav-item">
-                              <a href="service.html" class="nav-link">Services</a>
-                           </li>
-                           <li class="nav-item">
-                              <a href="contact.html" class="nav-link">Contact</a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <div class="icons text-center">
-                     <ul>
-                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#"><span class="fa fa-rss"></span></a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!--//footer-->
-      <!--/Login-->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header text-center">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <div class="login px-4 py-4 mx-auto mw-100">
-                     <h5 class="text-center mb-4">Login Now</h5>
-                     <form action="#" method="post">
-                        <div class="form-group">
-                           <p class="mb-2">Email address</p>
-                           <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="" required="">
-                        </div>
-                        <div class="form-group">
-                           <p class="mb-2">Password</p>
-                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
-                        </div>
-                        <div class="form-check mb-3">
-                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                           <p class="form-check-p">Check me out</p>
-                        </div>
-                        <button type="submit" class="btn submit">Sign In</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>游戏化学习方式</h2>
+          <p>基于游戏化学习理念选择平台，有趣、有用、有意义，把最抽象的人工智能用寓教于乐的方式体现出来，目前主要是要站在孩子们的角度去看世界。
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>可视化编程工具</h2>
+          <p>
+            利用谷歌blockly开源代码建设方便中小学生理解的平台，blockly是谷歌开源的方便小朋友编程
+			工具，是目前世界上最容易理解的儿童编程方式，广为企业采用。
+          </p>
+       </div>
+        <div class="col-lg-4">
+          <h2>WEB多维度思维</h2>
+          <p>
+           利用开源threejs的web化先进技术构建先进三维体验，目前web化VR等先进技术正在迅猛发展，原来
+		   怕计算机速度跟上不的问题也会在人类技术迭代中解决。
+          </p>
+        </div>
       </div>
-      <!--//Login-->
-      <!--/Register-->
-      <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header text-center">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <div class="login px-4 py-4 mx-auto mw-100">
-                     <h5 class="text-center mb-4">Register Now</h5>
-                     <form action="#" method="post">
-                        <div class="form-group ">
-                           <p class="mb-2">First name</p>
-                           <input type="text" class="form-control" id="validationDefault01" placeholder="" required="">
-                        </div>
-                        <div class="form-group">
-                           <p class="mb-2">Last name</p>
-                           <input type="text" class="form-control" id="validationDefault02" placeholder="" required="">
-                        </div>
-                        <div class="form-group">
-                           <p class="mb-2">Password</p>
-                           <input type="password" class="form-control" id="password1" placeholder="" required="">
-                        </div>
-                        <div class="form-group">
-                           <p class="mb-2">Confirm Password</p>
-                           <input type="password" class="form-control" id="password2" placeholder="" required="">
-                        </div>
-                        <button type="submit" class="btn submit ">Register</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(1)minecraft游戏学python</h2>
+		  <p>请下载minecraft1.12离线版本才能对接此网页，1.7.10版本是游戏化学习人工智能服务器版
+           链接：<a href="https://pan.baidu.com/s/1N5wE2THiNe3WCII032LX-g" >网盘下载 
+  </a>提取码：pcam。新mod制作软件还在整理中，后期发布
+          </p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/minecraft/minecraft/">实时练习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mod/apps">mod模组制作 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mods">新mod玩编程 &raquo;</a>	
+		  <a  class="btn btn-primary" role="button" href=http://open.163.com/special/openclass/wise02.html>WISE推教育游戏&raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.paddlepaddle.org">百度AI实践 &raquo;</a>
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(2)谷歌blockly游戏学编程</h2>
+		  <p>谷歌blockly游戏是由谷歌开发的原创游戏化学习编程，非常不错的课程</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/blockly/zh-hans/index.html">实时练习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/blockly2/Selectgame.html">blockly拓展 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/convert/demo">blockly转码 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.alice.org/">Alice官网 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mixly2/apps/mixly/index_skulpt_board_mixpy.html">mixly学python &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://ai2.17coding.net/?locale=zh_CN#4525796018356224">Appinventor &raquo;</a>		  
+		  
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(3)可视化编程学arduino硬件</h2>
+		  <p>arduino开源硬件编程采用blockly可视化编程，方便孩子们实用</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/ardublockly">实时练习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/blockly1/demos">学习blockly &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.arduino.cc/">Arduino官网 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://microbit.org/zh-CN/">Microbit官网 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.raspberrypi.org/">树莓派官网 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/blocklypi">树莓派编程 &raquo;</a>		  
+		  </p>
+        </div>
       </div>
-      <!--//Register-->
-      <!--js working-->
-      <script src='js/jquery-2.2.3.min.js'></script>
-      <!--//js working-->
-      <!--responsiveslides banner-->
-      <script src="js/responsiveslides.min.js"></script>
-      <script>
-         // You can also use "$(window).load(function() {"
-         $(function () {
-         	// Slideshow 4
-         	$("#slider4").responsiveSlides({
-         		auto:true,
-         		pager:false,
-         		nav:true,
-         		speed: 900,
-         		namespace: "callbacks",
-         		before: function () {
-         			$('.events').append("<li>before event fired.</li>");
-         		},
-         		after: function () {
-         			$('.events').append("<li>after event fired.</li>");
-         		}
-         	});
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(4)可视化编程做VR</h2>
+		  <p>简化VR创作方式，用blockly可视化来方便学生创作VR作品，目前激励为主</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/vr">实时练习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mc">我的世界VR体验  &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/three">三维模型 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/aframe/demo.html">VR制作 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/3dblock">三维创作 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/city">城市模拟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://zptcsoft.github.io/vr/build/">aframe教程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/painter">VR绘画 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/link">VR连接 &raquo;</a>
+		  
+		  
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(5)数字逻辑电路</h2>
+		  <p>在线HTML5体验数字数字逻辑电路的变化与复杂度</p>		  
+          <p>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/circuits">逻辑电路  &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/logic">数字电路模拟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/xor">数字逻辑游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/cpu">cpu模拟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/cputank">玩坦克学CPU &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/6502/expert.html">体验6502 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/genome">生物信息学 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/evolution5">进化游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/ASCII">ASCII码 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/binary">二进制运算 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/notbot">逻辑游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/supercold">时间游戏 &raquo;</a>
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(6)计算思维训练</h2>
+		  <p>通过简单的数学计算、公式计算、编程计算、数理逻辑，逐步培养学生利用计算思维解决问题的能力</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/math">实时体验 &raquo;</a>
+           <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sudoku1">九宫格数独游戏1 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sudoku2">数独游戏2 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sudoku3">数独游戏3 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/Memory">数字记忆游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/hexmap">组合地图 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.bilibili.com/video/av21376839/">计算机基础 &raquo;</a>		  
+		  </p>
+        </div>
+      </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(7)web化我的世界玩编程</h2>
+		  <p>网页版我的世界三维可视化编程，采用blockly可视化控制，另类方便有趣的minecraft解构</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/webminecraft">前往比赛 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://code.ypskz.com.cn/s/mc/stage/1/puzzle/1.htm">编程一小时 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.i3done.com/">3done建模 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/cubes">仿我的世界 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/cannon">三维物理 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://threejs.org/editor/">three编辑器 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://threejs.org/">threejs案例 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.thingjs.com/guide/?m=sample">优秀案例 &raquo;</a>
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.thingjs.com/guide/?m=sample&g=1">模块化组合 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://techbrood.com/aframe#a-frame">A-Frame &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://build.vox-l.com">vox-l学习化游戏 &raquo;</a>
+		  
+		  
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(8)可视化编程学html网页</h2>
+		  <p>用blockly来学习网页制作可以让学生非常好奇好玩有兴趣，学生会学会网页结构性知识，更好
+		  理解互联网web内容的传播与模块化思维</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/html">前往练习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.icourse163.org/category/computer">国家开放课程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.bootcss.com/">Bootstrap &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://open.163.com/khan/">可汗学院 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.luojiji.com/">罗辑思维 &raquo;</a>
+		 
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/code">在线编码1 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/codepen">在线编码2 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://david.li/vortexspheres/">web案例 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://codepen.io/xuegoo/pen/YMraNb">字符编程 &raquo;</a>
+		  </p>
 
-         });
-      </script>
-      <!--// responsiveslides banner-->
-      <!--About OnScroll-Number-Increase-JavaScript -->
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.countup.js"></script>
-      <script>
-         $('.counter').countUp();
-      </script>
-      <!-- //OnScroll-Number-Increase-JavaScript -->
-      <!-- start-smoth-scrolling -->
-      <script src="js/move-top.js"></script>
-      <script src="js/easing.js"></script>
-      <script>
-         jQuery(document).ready(function ($) {
-         	$(".scroll").click(function (event) {
-         		event.preventDefault();
-         		$('html,body').animate({
-         			scrollTop: $(this.hash).offset().top
-         		}, 900);
-         	});
-         });
-      </script>
-      <!-- start-smoth-scrolling -->
-      <!-- here stars scrolling icon -->
-      <script>
-         $(document).ready(function () {
+        </div>
+        <div class="col-lg-4">
+          <h2>(9)人工智能玩文学</h2>
+		  <p>收集国内外文化自信作品，弘扬中国优秀传统文化，用人工智能研究中国文化，助力中国文化复兴</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://poem.studentsystem.org/index">唐诗别苑 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://hanziyuan.net/">说文解字 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://ctext.org/zhs">中国经典 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.etymonline.com/">英文词源 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.shufazidian.com/">中文书法 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.shuowen.org/">查字 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.ucdrs.superlib.net/">全国图书查询 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://ctext.org/library.pl?if=gb&collection=4&remap=gb">四库全书 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.wangyangming.org.cn/">致良知 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/story">编写故事 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.yabook.org/">雅书 &raquo;</a>
+		  </p>
+        </div>
+      </div>		  
+		  
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(10)玩音乐学编程</h2>
+		  <p>利用block方式研究音乐、学习音乐、编写你自己的音乐；从数学大师毕达哥拉斯发现八度音程起，音乐天然跟数学有了紧密关系，从音乐角度学习编程是快乐培养数理逻辑的天然结合。</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/music">前往比赛 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://learningmusic.ableton.com/zh/index.html">音乐课程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://apps.musedlab.org/groovepizza/">智能音乐 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://dev.abe.sh/block-chords/">绘音乐 &raquo;</a><a class="btn btn-primary" role="button" href="https://beatbucket.io/">音乐编程 &raquo;</a>		
+		  <a class="btn btn-primary" role="button" href="http://www.futureforum.org.cn/Home/nav/155.html">未来科技大奖 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.nobelprize.org/">诺贝尔奖 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.wuwenjunkejijiang.cn/wj/index.aspx">吴文俊人工智能奖 &raquo;</a>
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(11)scratch3可视化编程</h2>
+		  <p>根据MIT开源scratch3.0制作，比2.0更加美观实用，方便各类终端各类插件融入；同时我们提供相似的开源的好玩的游戏化学习编程软件，让学生可以多角度的思考图形化编程这一现象，同时思考深层次的编程逻辑</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/scratch3">scratch3 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/snap">snap &raquo;</a>
+		  
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/TurtleBlocksJS.activity/index.html?aid=6e794a6a-a4c1-41c6-8e37-9ece1bead80b&a=org.sugarlabs.TurtleBlocksJS&n=Turtle%20Blocks%20JS">turtle乌龟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/bear/playground.html">水熊编程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/puzzle/editor.html">字符游戏 &raquo;</a>
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/phaser">做游戏学编程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/robot">机器人编程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/hagongrobot/html">哈工机器人 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/91robot">91robot &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/Robotgame">AI足球 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/teachblockly">blockly教学 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/webduino">webduino &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/codeorg">仿codeorg &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/blocklypi/apps/blocklypi">blocklypi1 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/blocklypi/wiringpi/apps/blocklypi">blocklypi2 &raquo;</a>
+		  </p>
 
-         	var defaults = {
-         		containerID: 'toTop', // fading element id
-         		containerHoverID: 'toTopHover', // fading element hover id
-         		scrollSpeed: 1100,
-         		easingType: 'linear'
-         	};
+        </div>
+        <div class="col-lg-4">
+          <h2>(12)游戏化学习人工智能</h2>
+		  <p>用游戏化学习的方式理解人工智能高阶思维是中小学生最佳的学习方式，是寓教于乐的快乐方式，不是应试灌输的加重，是减负逻辑的内涵推动，真正以学生为中心，让学生的需求在学校供给侧中走出来</p>		  
+          <p>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/aigame">与AI玩球 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/aigame2">AI对战 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/snakeai">AI玩贪吃蛇 &raquo;</a>
+		  
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/tanks">AI玩战争 &raquo;</a>
+		  
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/wuzi">与AI下五子棋 &raquo;</a>
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/evolution">在线观察AI进化 &raquo;</a>
+		  
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/soundmaze">声音迷宫 &raquo;</a>
+		  <a  class="btn btn-primary" role="button" href=https://mooc.study.163.com/university/deeplearning_ai#/c>吴恩达AI课&raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://developers.google.cn/machine-learning/crash-course/">谷歌AI课程 &raquo;</a>
+		  <a  class="btn btn-primary" role="button" href=http://ai.baidu.com/paddlepaddle/openCourses>百度AI课程&raquo;</a>
+		  <a  class="btn btn-primary" role="button" href="https://tensorspace.org/html/playground/lenet_zh.html">神经网络&raquo;</a>
+		  <a  class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/evolution2">进化案例&raquo;</a>
+		  <a  class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/evolution3">进化生存&raquo;</a>
+		  <a  class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/evolution4">进化实验&raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/TensorFlowJS">图像识别 &raquo;</a>
+		  
+		  </p>
+        </div>
+      </div>
+	  <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(13)游戏化学习生命进化算法</h2>
+		  <p>康威的生命游戏，也被称为生命游戏或简单的生命，是一个细胞自动机设计的英国数学家约翰霍顿康威在1970年。这是细胞自动机最著名的例子。“游戏”生命博弈的宇宙是方形单元的无限二维正交网格，每个方格单元处于两种可能的状态之一，无论是活的还是死的。 每个细胞与其八个邻居相互作用，这八个邻居是直接水平，垂直或对角相邻的细胞。 <a href="https://www.bilibili.com/bangumi/play/ss25408?from=search&seid=2122799183560531460">纪录片<混沌之谜>拓展认知</a></p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/life">生命游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/life/game">国内模拟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/wave-interference_en.html">双缝干涉 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/under-pressure_zh_CN.html">压力实验 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/coulombs-law_en.html">库仑定律 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/fractions-intro_en.html">分数游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/atomic-interactions_zh_CN.html">原子作用 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/energy-skate-park-basics_zh_CN.html">能量滑板 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/hookes-law_zh_CN.html">胡克定律 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/molecule-polarity_zh_CN.html">分子极性 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/john-travoltage_zh_CN.html">静电电压 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/friction_zh_CN.html">摩擦力 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/molarity_zh_CN.html">摩尔浓度 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/balloons-and-static-electricity_zh_CN.html">气球静电 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/area-builder_zh_CN.html">区域建造 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/states-of-matter_zh_CN.html">物质状态 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/acid-base-solutions_zh_CN.html">酸碱溶液 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.circuits.top/">初中物理模拟集 &raquo;</a>
+		  
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(14)科学仿真游戏化学习1</h2>
+		  <p>由诺贝尔奖获得者卡尔·威曼于2002年创立，PhET互动仿真程序计划由科罗拉多大学的团队专项运营，旨在创建免费的数学和科学互动程序。 PhET 是基于拓展型教育的相关研究并且激励学生在直观的、游戏化的环境中进行探索和发现。</p>		  
+          <p>
+		  <a class="btn btn-primary" role="button" href="https://phet.colorado.edu/zh_CN/">多学科数字体验 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/function-builder_zh_CN.html">理解方程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/expression-exchange_zh_CN.html">表达式变换 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/equality-explorer_zh_CN.html">等式探索 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/ph-scale_zh_CN.html">探索PH值 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/ohms-law_zh_CN.html">欧姆定律 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/circuit-construction-kit-dc_zh_CN.html">组装电路 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/graphing-slope-intercept_zh_CN.html">斜率与截距 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/beers-law-lab_zh_CN.html">比尔定律 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/make-a-ten_zh_CN.html">凑整10 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/area-model-decimals_zh_CN.html">面积模型 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/isotopes-and-atomic-mass_zh_CN.html">同位素 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/molecules-and-light_zh_CN.html">分子与光 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/color-vision_zh_CN.html">光的混合 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/bending-light_zh_CN.html">光的折射 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/rutherford-scattering_zh_CN.html">粒子散射 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/plinko-probability_zh_CN.html">弹珠几率 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/charges-and-fields_zh_CN.html">电荷电场 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/resistance-in-a-wire_zh_CN.html">电线电阻 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/capacitor-lab-basics_zh_CN.html">电容实验 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/graphing-quadratics_en.html">二次方程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/curve-fitting_zh_CN.jar">多次拟合 &raquo;</a>
+		  </p>
 
+        </div>
+        <div class="col-lg-4">
+          <h2>(15)科学仿真游戏化学习2</h2>
+		  <p>创客教育必须具备基本信息素养与科学素养才能在创新创造中不断了解世界并找到解决办法，传统的抽象科学是在纸上为主的媒介世界，而科学最难的理解“活”的运动世界，HTML5网页技术的强大是我们没想到的</p>		  
+          <p>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/balancing-chemical-equations_zh_CN.html">化学式配平 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/least-squares-regression_zh_CN.html">线性拟合 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/build-an-atom_zh_CN.html">原子模型 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/gene-expression-essentials_zh_CN.html">探索基因 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/wave-on-a-string_zh_CN.html">绳波研究 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/neuron_zh_CN.html">神经元 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/proportion-playground_zh_CN.html">比例游乐 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/unit-rates_zh_CN.html">单位价格 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/gravity-and-orbits_zh_CN.html">重力轨道 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/pendulum-lab_zh_CN.html">钟摆实验 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/gravity-force-lab_zh_CN.html">万有引力 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/projectile-motion_zh_CN.html">抛物线 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/trig-tour_zh_CN.html">三角函数 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/masses-and-springs_zh_CN.html">弹簧质量 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/graphing-lines_zh_CN.html">直线图形 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/arithmetic_zh_CN.html">四则运算 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/area-model-algebra_zh_CN.html">面积代数 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/faradays-law_zh_CN.html">法拉弟定律 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/reactants-products-and-leftovers_zh_CN.html">物质反应 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/molecule-shapes_zh_CN.html">分子形状 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/fraction-matcher_zh_CN.html">分数配对 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/forces-and-motion-basics_zh_CN.html">力和运动 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/energy-forms-and-changes_zh_CN.html">能量转换 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/lab/balancing-act_zh_CN.html">平衡实验 &raquo;</a>
+		  
+		  
+		  
+		  
+		  </p>
+        </div>
+      </div>	  
+	  <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(16)玩游戏学python</h2>
+		  <p>在线体验python代码的神奇，用抽象的代码生成各类图形，利用案例模仿学习</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/Jappy.activity/index.html?aid=0dc7bc68-d88b-4e77-b7d2-c74f254bb923&a=org.somosazucar.JappyActivity&o=9a4913b9-612b-4bf2-8fa2-9e082979ec74&n=Jappy Activity">在线学习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/Markdown.activity/index.html?aid=91b0428c-3ffb-40da-9f2b-2b03c62da947&a=org.sugarlabs.Markdown&o=bac7b118-a7f1-4776-bc29-eb6bd5f7ff92&n=Markdown Activity">Markdown编程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/QRCode.activity/index.html?aid=6863ddcc-7bbe-4d53-a42d-03be8b183c95&a=org.olpcfrance.qrcode&n=QRCode">在线制作二维码 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/withcode">python在线 &raquo;</a>
+		  
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(17)玩迷宫找通路</h2>
+		  <p>简单的游戏迷宫让你脑洞大开，核心是如何指引机器人快速找到出路</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/MazeWeb.activity/">在线学习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/game1">俄罗斯方块 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/snake">贪吃蛇 &raquo;</a>
+          <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/waste">环保游戏 &raquo;</a>	
+		  
+		  </p>
 
-         	$().UItoTop({
-         		easingType: 'easeOutQuart'
-         	});
+        </div>
+        <div class="col-lg-4">
+          <h2>(18)玩全球学地理</h2>
+		  <p>游戏中学习全球地理、国家区域，用颜色标注，轻松玩转地球</p>		  
+          <p><a class="btn btn-primary" role="button" href="https://ispring.github.io/WebGlobe/index.html">地球在线 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://phoboslab.org/wipeout/">地面赛车 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://earth.plus360degrees.com/">鸟瞰地球 &raquo;</a>
+		  </p>
+        </div>
+      </div>	  
+	  <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(19)儿童英语游戏学</h2>
+		  <p>方便儿童入门英语感知训练，通过玩的方式学习有趣有感知</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/Abecedarium.activity/index.html?aid=0fcc1d36-6944-425e-8ed7-579e0eab17ba&a=org.olpcfrance.Abecedarium&o=c96d3952-2d64-4c2a-b08c-bea64c69ce59&n=Abecedarium Activity">在线学习 &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(20)玩游戏学习数学</h2>
+		  <p>坦克大战中学数学，看看儿童在游戏中如何用数学能力打坦克</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/tank">坦克大战 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mathwars">数学战争 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mathsgame">快速抢答 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/castle">玩塔防学数学 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/mathquiz">竞赛 &raquo;</a>
+		  </p>
 
-         });
-      </script>
-      <!-- //here ends scrolling icon -->
-      <!--bootstrap working-->
-      <script src="js/bootstrap.min.js"></script>
-      <!-- //bootstrap working-->
-   </body>
+        </div>
+        <div class="col-lg-4">
+          <h2>(21)在线思维导图</h2>
+		  <p>通过思维导图培养孩子们逻辑整理知识库的能力</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/LabyrinthJS.activity/index.html?aid=09eb5fbf-1f8a-466f-8009-65728632dc59&a=org.olpc-france.labyrinthjs&o=10838e7d-b64c-4686-8685-72dd3e73699c&n=Labyrinth JS Activity">前往学习 &raquo;</a></p>
+        </div>
+      </div>  
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(22)随意玩绘画</h2>
+		  <p>临时方便学生们绘画制作产生灵感</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/Paint.activity/index.html?aid=98241923-544f-4c24-8ff5-02b83e7d52da&a=org.olpcfrance.PaintActivity&n=Paint">前往比赛 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/pen">在线PS &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/drawcode/app">画画学编程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/draw">绘画板 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/draw2">涂鸦 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/codegif">代码做动画 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/fractal1">分形绘图1 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/fractal2">分形绘图2 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/fractal3">分形绘图3 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/fractal4/demo">分形绘图4 &raquo;</a>
+		  
+		  
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(23)物理与生命进化</h2>
+		  <p>随意绘制各类几何图形，体验力学坠落反弹物理模拟；同时体验分形理论与混沌;群智游戏必须用firefox浏览器才能看到三维</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/PhysicsJS.activity/index.html?aid=9ca69b13-9785-4eaf-a01e-670a2fbd0088&a=org.olpg-france.physicsjs&o=0d3845a4-8a5b-4534-a4b6-69c7e407fb7e&n=Physics JS Activity">前往交流 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/leaflet">分形体验 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/ChaosGame">混沌游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://owenmcnaughton.github.io/Boids.js/">群智三维 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/fractal/demo">分形动画 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/boids2">群智二维 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/chaos2/mandyn.html">混沌演变 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/verl2d/v2object.html">力学模拟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/verl2d/verl2d.html">粒子物理 &raquo;</a>
+		  
+		  
+		  </p>
+
+        </div>
+        <div class="col-lg-4">
+          <h2>(24)物理齿轮玩机械</h2>
+		  <p>通过在线随意画齿轮，组成各类齿轮，方便学生理解机械齿轮的功用</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/sugar/activities/Gears.activity/index.html?aid=941e826a-2677-44df-ab06-c5b3d768dc4c&a=org.sugarlabs.GearsActivity&n=Gears">前往学习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/ChemFight">化学战争 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/robotic">机器手臂模拟 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://mp.weixin.qq.com/s/gEKyxJSm6noGbZva9DAEcQ">自动化案例 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/basketball">篮球游戏 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/matterjs">物理引擎 &raquo;</a>
+		  </p>
+        </div>
+      </div>	  
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>(25)scratch2.0可视化编程</h2>
+		  <p>目前只支持本校邀请码才能注册加入，不影响在线scratch创作，只是不能保存</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://scratch.jnschool.com">前往比赛 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://ypit.ypskz.com.cn/scratch/">在线教程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.openlearnsite.com/">开源教学平台 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.shaoerbc.org">少儿编程 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://m.cctalk.com/inst/stetdxb3?xh_fshareuid=0377e128-ab38-9aeb-f208-e4a46b70851f">立人创客三人行cctalk课程 &raquo;</a>
+		  </p>
+        </div>
+        <div class="col-lg-4">
+          <h2>(26)立人创客创作交流社区</h2>
+		  <p>目前只支持本校邀请码才能注册加入，主要是保护未成年人</p>		  
+          <p><a class="btn btn-primary" role="button" href="http://bbs.jnschool.com">前往交流 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://mp.weixin.qq.com/s/i-wF8YQRV-H2wRnmr8zzow">三人行原理 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="http://www.jnschool.com/html/lessons/together">实时协作 &raquo;</a>
+		  
+		  </p>
+
+        </div>
+        <div class="col-lg-4">
+          <h2>(27)立人创客三人行创课</h2>
+		  <p>我们把本平台的各类实验工具做成视频等多媒体课程，主要是激励学生们做课程，当创客小导师，激励更多同学们参与高阶玩编程。公办教育中的创客教育与国内外最好的两个公司参照。</p>		  
+          <p><a class="btn btn-primary" role="button" href="https://m.umu.cn/program/fde71a91fb046b3bc1fc2a69#/">前往学习 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://shequ.codemao.cn/">借鉴编程猫 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://www.microsoft.com/zh-cn/makecode?rtc=1">借鉴微软 &raquo;</a>
+		  <a class="btn btn-primary" role="button" href="https://mp.weixin.qq.com/s/FXxW2o2J-MGdA1QUo42epA">其它游戏化学习网站 &raquo;</a>
+		  
+		  </p>
+        </div>
+      </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>平台二维码</h2>
+		  <p><img src=maker1.png width=200 height=200 /></p>		  
+          
+        </div>
+        <div class="col-lg-4">
+          <h2>联系微信号</h2>
+		  <p><img src=maker2.png width=200 height=200 /></p>		  
+         
+        </div>
+        <div class="col-lg-4">
+          <h2>立人创客公众号</h2>
+		  <p><img src=maker3.jpg width=200 height=200 /></p>
+        </div>
+      </div>	
+	<div class="row">
+    <div align=center>
+	
+<script language='javascript' src='http://www.jnschool.com/index.php?m=formguide&c=index&a=show&formid=44&action=js&siteid=1'></script>
+			
+		
+	<br>
+	
+	</div>
+	</div>
+	  
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    
+    <!-- github ribbon -->
+<a href="https://github.com/xuegoo/xuegoo" target='_blank'><img style="position: absolute; top: 0; right: 0; border: 0;z-index:2000" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+  </body>
 </html>
